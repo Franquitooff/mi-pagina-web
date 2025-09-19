@@ -14,9 +14,9 @@
     <div>
         <!-- Navegación -->
         <header>
-            <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+            <nav class="navbar navbar-expand-lg fixed-top">
                 <div class="container">
-                    <a class="navbar-brand fw-bold" href="../index.html">gineeri</a>
+                    <a class="navbar-brand" href="../index.html">gineeri</a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
                         <span class="navbar-toggler-icon"></span>
                     </button>
@@ -24,7 +24,8 @@
                         <ul class="navbar-nav ms-auto">
 
                             <!-- Aprende | cosas simples -->
-          <a class="dropdown-link-unico nav-link" href="../framework.html" >Aprende</a><!-- explicado con analogías simples -->
+                            <a class="dropdown-link-unico nav-link"
+                                href="../framework.html">Aprende</a><!-- explicado con analogías simples -->
 
                             <!-- Documentación -->
                             <li class="nav-item dropdown">
@@ -48,11 +49,13 @@
                                 </ul>
                             </li>
 
-                            
-          <a class="dropdown-link-unico nav-link" href="soluciones.html" >Soluciones</a><!-- explicado con analogías simples -->
 
-                            
-          <a class="dropdown-link-unico nav-link" href="../industrias.html" >Industrias</a><!-- explicado con analogías simples -->
+                            <a class="dropdown-link-unico nav-link"
+                                href="soluciones.html">Soluciones</a><!-- explicado con analogías simples -->
+
+
+                            <a class="dropdown-link-unico nav-link"
+                                href="../industrias.html">Industrias</a><!-- explicado con analogías simples -->
 
                             <!-- Acerca de -->
                             <li class="nav-item dropdown">
@@ -61,12 +64,19 @@
                                     Acerca de
                                 </a>
                                 <ul class="dropdown-menu" aria-labelledby="acercaDeDropdown">
-                                    <li><a href="../acercade/preguntasfrecuentes.html" class="dropdown-link">Preguntas frecuentes</a></li>
+                                    <li><a href="../acercade/preguntasfrecuentes.html" class="dropdown-link">Preguntas
+                                            frecuentes</a></li>
                                     <li><a href="#" class="dropdown-link">Sección</a></li>
                                     <li><a href="#" class="dropdown-link">Sección</a></li>
                                     <li><a href="#" class="dropdown-link">Sección</a></li>
                                 </ul>
                             </li>
+                            <!-- Botón minimalista sin texto -->
+                            <button class="theme-toggle-minimal" id="themeToggle" onclick="toggleDarkMode()">
+                                <span class="toggle-track">
+                                    <span class="toggle-thumb"></span>
+                                </span>
+                            </button>
                         </ul>
                     </div>
                 </div>
@@ -92,28 +102,70 @@
                     <div class="contenido-medio-texto" id="errores-de-tiempo-de-ejecución">
                         <h2>Errores de tiempo de ejecución</h2>
                         <table class="tabla-codigos">
-                        <thead>
-                            <tr>
-                            <th>Código</th>
-                            <th>Mensaje</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr><td>0</td><td>Función de configuración</td></tr>
-                            <tr><td>1</td><td>Función de renderizado</td></tr>
-                            <tr><td>2</td><td>Observador getter</td></tr>
-                            <tr><td>3</td><td>Devolución de llamada del observador</td></tr>
-                            <tr><td>4</td><td>Función de limpieza del observador</td></tr>
-                            <tr><td>5</td><td>Controlador de eventos nativo</td></tr>
-                            <tr><td>6</td><td>Controlador de eventos de componentes</td></tr>
-                            <tr><td>7</td><td>Gancho de vnode</td></tr>
-                            <tr><td>8</td><td>Gancho directivo</td></tr>
-                            <tr><td>9</td><td>Gancho de transición</td></tr>
-                            <tr><td>10</td><td>appErrorHandler</td></tr>
-                            <tr><td>11</td><td>appWarnHandler</td></tr>
-                            <tr><td>12</td><td>Función ref</td></tr>
-                            <tr><td>13</td><td>Cargador de componentes asíncrono</td></tr>
-                        </tbody>
+                            <thead>
+                                <tr>
+                                    <th>Código</th>
+                                    <th>Mensaje</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>0</td>
+                                    <td>Función de configuración</td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Función de renderizado</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>Observador getter</td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>Devolución de llamada del observador</td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td>Función de limpieza del observador</td>
+                                </tr>
+                                <tr>
+                                    <td>5</td>
+                                    <td>Controlador de eventos nativo</td>
+                                </tr>
+                                <tr>
+                                    <td>6</td>
+                                    <td>Controlador de eventos de componentes</td>
+                                </tr>
+                                <tr>
+                                    <td>7</td>
+                                    <td>Gancho de vnode</td>
+                                </tr>
+                                <tr>
+                                    <td>8</td>
+                                    <td>Gancho directivo</td>
+                                </tr>
+                                <tr>
+                                    <td>9</td>
+                                    <td>Gancho de transición</td>
+                                </tr>
+                                <tr>
+                                    <td>10</td>
+                                    <td>appErrorHandler</td>
+                                </tr>
+                                <tr>
+                                    <td>11</td>
+                                    <td>appWarnHandler</td>
+                                </tr>
+                                <tr>
+                                    <td>12</td>
+                                    <td>Función ref</td>
+                                </tr>
+                                <tr>
+                                    <td>13</td>
+                                    <td>Cargador de componentes asíncrono</td>
+                                </tr>
+                            </tbody>
                         </table>
 
                     </div>
@@ -121,48 +173,108 @@
                     <div class="contenido-medio-texto" id="errores-del-compilador">
                         <h2>Errores del compilador</h2>
                         <table class="tabla-codigos">
-                        <thead>
-                            <tr>
-                            <th>Código</th>
-                            <th>Mensaje</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr><td>0</td><td>Función de configuración</td></tr>
-                            <tr><td>1</td><td>Función de renderizado</td></tr>
-                            <tr><td>2</td><td>Observador getter</td></tr>
-                            <tr><td>3</td><td>Devolución de llamada del observador</td></tr>
-                            <tr><td>4</td><td>Función de limpieza del observador</td></tr>
-                            <tr><td>5</td><td>Controlador de eventos nativo</td></tr>
-                            <tr><td>6</td><td>Controlador de eventos de componentes</td></tr>
-                            <tr><td>7</td><td>Gancho de vnode</td></tr>
-                            <tr><td>8</td><td>appErrorHandler</td></tr>
-                            <tr><td>9</td><td>Cargador de componentes asíncrono</td></tr>
-                        </tbody>
+                            <thead>
+                                <tr>
+                                    <th>Código</th>
+                                    <th>Mensaje</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>0</td>
+                                    <td>Función de configuración</td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Función de renderizado</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>Observador getter</td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>Devolución de llamada del observador</td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td>Función de limpieza del observador</td>
+                                </tr>
+                                <tr>
+                                    <td>5</td>
+                                    <td>Controlador de eventos nativo</td>
+                                </tr>
+                                <tr>
+                                    <td>6</td>
+                                    <td>Controlador de eventos de componentes</td>
+                                </tr>
+                                <tr>
+                                    <td>7</td>
+                                    <td>Gancho de vnode</td>
+                                </tr>
+                                <tr>
+                                    <td>8</td>
+                                    <td>appErrorHandler</td>
+                                </tr>
+                                <tr>
+                                    <td>9</td>
+                                    <td>Cargador de componentes asíncrono</td>
+                                </tr>
+                            </tbody>
                         </table>
                     </div>
 
                     <div class="contenido-medio-texto" id="errores-logicos">
                         <h2>Errores lógicos</h2>
                         <table class="tabla-codigos">
-                        <thead>
-                            <tr>
-                            <th>Código</th>
-                            <th>Mensaje</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr><td>0</td><td>Función de configuración</td></tr>
-                            <tr><td>1</td><td>Función de renderizado</td></tr>
-                            <tr><td>2</td><td>Observador getter</td></tr>
-                            <tr><td>3</td><td>Devolución de llamada del observador</td></tr>
-                            <tr><td>4</td><td>Controlador de eventos nativo</td></tr>
-                            <tr><td>5</td><td>Gancho directivo</td></tr>
-                            <tr><td>6</td><td>Gancho de transición</td></tr>
-                            <tr><td>7</td><td>appErrorHandler</td></tr>
-                            <tr><td>8</td><td>Función ref</td></tr>
-                            <tr><td>9</td><td>Cargador de componentes asíncrono</td></tr>
-                        </tbody>
+                            <thead>
+                                <tr>
+                                    <th>Código</th>
+                                    <th>Mensaje</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>0</td>
+                                    <td>Función de configuración</td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Función de renderizado</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>Observador getter</td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>Devolución de llamada del observador</td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td>Controlador de eventos nativo</td>
+                                </tr>
+                                <tr>
+                                    <td>5</td>
+                                    <td>Gancho directivo</td>
+                                </tr>
+                                <tr>
+                                    <td>6</td>
+                                    <td>Gancho de transición</td>
+                                </tr>
+                                <tr>
+                                    <td>7</td>
+                                    <td>appErrorHandler</td>
+                                </tr>
+                                <tr>
+                                    <td>8</td>
+                                    <td>Función ref</td>
+                                </tr>
+                                <tr>
+                                    <td>9</td>
+                                    <td>Cargador de componentes asíncrono</td>
+                                </tr>
+                            </tbody>
                         </table>
                     </div>
                 </main>
@@ -172,7 +284,8 @@
                     <div class="nav-seccion">
                         <p class="titulo-seccion">En esta página</p>
                     </div>
-                    <a class="nav-link" href="errores.html#errores-de-tiempo-de-ejecución">Errores de tiempo de ejecución</a>
+                    <a class="nav-link" href="errores.html#errores-de-tiempo-de-ejecución">Errores de tiempo de
+                        ejecución</a>
                     <a class="nav-link" href="errores.html#errores-del-compilador">Errores del compilador</a>
                     <a class="nav-link" href="errores.html#errores-logicos">Errores lógicos</a>
                 </ul>
@@ -182,25 +295,25 @@
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
-<script>
-        document.querySelectorAll('.nav-link').forEach(link => {
-            link.addEventListener('click', function (e) {
-                const targetId = this.getAttribute('href').split('#')[1];
-                const targetElement = document.getElementById(targetId);
+        <script>
+            document.querySelectorAll('.nav-link').forEach(link => {
+                link.addEventListener('click', function (e) {
+                    const targetId = this.getAttribute('href').split('#')[1];
+                    const targetElement = document.getElementById(targetId);
 
-                if (targetElement) {
-                    e.preventDefault(); // evita el comportamiento por defecto
-                    const offset = 100; // altura que quieres compensar
-                    const top = targetElement.getBoundingClientRect().top + window.scrollY - offset;
+                    if (targetElement) {
+                        e.preventDefault(); // evita el comportamiento por defecto
+                        const offset = 100; // altura que quieres compensar
+                        const top = targetElement.getBoundingClientRect().top + window.scrollY - offset;
 
-                    window.scrollTo({
-                        top: top,
-                        behavior: 'smooth'
-                    });
-                }
+                        window.scrollTo({
+                            top: top,
+                            behavior: 'smooth'
+                        });
+                    }
+                });
             });
-        });
-    </script>
+        </script>
 
         <script>
             document.addEventListener("DOMContentLoaded", function () {
@@ -225,7 +338,7 @@
                 });
             });
         </script>
-
+        <script src="../theme.js"></script>
 
 </body>
 

@@ -14,9 +14,9 @@
     <div>
         <!-- Navegación -->
         <header>
-            <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+  <nav class="navbar navbar-expand-lg fixed-top">
                 <div class="container">
-                    <a class="navbar-brand fw-bold" href="../index.html">gineeri</a>
+                    <a class="navbar-brand" href="../index.html">gineeri</a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
                         <span class="navbar-toggler-icon"></span>
                     </button>
@@ -24,7 +24,8 @@
                         <ul class="navbar-nav ms-auto">
 
                             <!-- Aprende | cosas simples -->
-          <a class="dropdown-link-unico nav-link" href="../framework.html" >Aprende</a><!-- explicado con analogías simples -->
+                            <a class="dropdown-link-unico nav-link"
+                                href="../framework.html">Aprende</a><!-- explicado con analogías simples -->
 
                             <!-- Documentación -->
                             <li class="nav-item dropdown">
@@ -33,21 +34,28 @@
                                     Documentación
                                 </a>
                                 <ul class="dropdown-menu" aria-labelledby="documentaciónDropdown">
-                                    <li><a href="introduccion.html" class="dropdown-link">Guía del framework</a></li><!-- Filosofía de Gineeri, arquitectura por capas, cómo se integra con .NET -->
+                                    <li><a href="introduccion.html" class="dropdown-link">Guía del framework</a></li>
+                                    <!-- Filosofía de Gineeri, arquitectura por capas, cómo se integra con .NET -->
                                     <!--<li><a href="tutorial.html" class="dropdown-link">Tutorial</a></li> Crea tu primera app con Gineeri: desde requisitos hasta interfaz funcional -->
-                                    <li><a href="ejemplos.html" class="dropdown-link">Ejemplos</a></li><!-- Proyectos de taller, brokers, salones, con capturas y fragmentos de código -->
-                                    <li><a href="inicio-rapido.html" class="dropdown-link">Inicio rápido</a></li><!-- Instalación, configuración en Visual Studio, estructura mínima -->
-                                    <li><a href="glosario.html" class="dropdown-link">Glosario técnico</a></li><!-- Términos como “UI unificada”, “persistencia desacoplada”, “componente GUI” -->
-                                    <li><a href="errores.html" class="dropdown-link">Errores comunes</a></li><!-- Problemas frecuentes y cómo resolverlos (circularidad, render, bindings) -->
+                                    <li><a href="ejemplos.html" class="dropdown-link">Ejemplos</a></li>
+                                    <!-- Proyectos de taller, brokers, salones, con capturas y fragmentos de código -->
+                                    <li><a href="inicio-rapido.html" class="dropdown-link">Inicio rápido</a></li>
+                                    <!-- Instalación, configuración en Visual Studio, estructura mínima -->
+                                    <li><a href="glosario.html" class="dropdown-link">Glosario técnico</a></li>
+                                    <!-- Términos como “UI unificada”, “persistencia desacoplada”, “componente GUI” -->
+                                    <li><a href="errores.html" class="dropdown-link">Errores comunes</a></li>
+                                    <!-- Problemas frecuentes y cómo resolverlos (circularidad, render, bindings) -->
                                     <!-- <li><a href="migracion.html" class="dropdown-link">Migración</a></li> Guía para transformar apps tradicionales usando Gineeri -->
                                 </ul>
                             </li>
 
-                            
-          <a class="dropdown-link-unico nav-link" href="soluciones.html" >Soluciones</a><!-- explicado con analogías simples -->
 
-                            
-          <a class="dropdown-link-unico nav-link" href="../industrias.html" >Industrias</a><!-- explicado con analogías simples -->
+                            <a class="dropdown-link-unico nav-link"
+                                href="soluciones.html">Soluciones</a><!-- explicado con analogías simples -->
+
+
+                            <a class="dropdown-link-unico nav-link"
+                                href="../industrias.html">Industrias</a><!-- explicado con analogías simples -->
 
                             <!-- Acerca de -->
                             <li class="nav-item dropdown">
@@ -56,12 +64,19 @@
                                     Acerca de
                                 </a>
                                 <ul class="dropdown-menu" aria-labelledby="acercaDeDropdown">
-                                    <li><a href="../acercade/preguntasfrecuentes.html" class="dropdown-link">Preguntas frecuentes</a></li>
+                                    <li><a href="../acercade/preguntasfrecuentes.html" class="dropdown-link">Preguntas
+                                            frecuentes</a></li>
                                     <li><a href="#" class="dropdown-link">Sección</a></li>
                                     <li><a href="#" class="dropdown-link">Sección</a></li>
                                     <li><a href="#" class="dropdown-link">Sección</a></li>
                                 </ul>
                             </li>
+                            <!-- Botón minimalista sin texto -->
+          <button class="theme-toggle-minimal" id="themeToggle" onclick="toggleDarkMode()">
+            <span class="toggle-track">
+              <span class="toggle-thumb"></span>
+            </span>
+          </button>
                         </ul>
                     </div>
                 </div>
@@ -75,7 +90,7 @@
                     <div class="nav-seccion">
                         <p class="titulo-navegador">Documentación</p>
                     </div>
-                    
+
                     <div class="nav-seccion">
                         <p class="titulo-seccion">Empezar</p>
                         <a href="introduccion.html">Introducción</a>
@@ -169,52 +184,68 @@
                             repellat ullam molestiae non, fuga voluptas consequuntur doloremque ipsa culpa explicabo
                             sapiente dolorum aliquid rerum voluptate nobis!Lorem ipsum dolor sit amet consectetur
                             adipisicing elit. Id laboriosam, illo, voluptatum qui repellat ullam molestiae non, fuga
-                            voluptas consequuntur doloremque ipsa culpa explicabo sapiente dolorum aliquid rerum voluptate
-                            nobis!Lorem ipsum dolor sit amet consectetur adipisicing elit. Id laboriosam, illo, voluptatum
+                            voluptas consequuntur doloremque ipsa culpa explicabo sapiente dolorum aliquid rerum
+                            voluptate
+                            nobis!Lorem ipsum dolor sit amet consectetur adipisicing elit. Id laboriosam, illo,
+                            voluptatum
                             qui repellat ullam molestiae non, fuga voluptas consequuntur doloremque ipsa culpa explicabo
                             sapiente dolorum aliquid rerum voluptate nobis!Lorem ipsum dolor sit amet consectetur
                             adipisicing elit. Id laboriosam, illo, voluptatum qui repellat ullam molestiae non, fuga
-                            voluptas consequuntur doloremque ipsa culpa explicabo sapiente dolorum aliquid rerum voluptate
-                            nobis!Lorem ipsum dolor sit amet consectetur adipisicing elit. Id laboriosam, illo, voluptatum
-                            qui repellat ullam molestiae non, fuga voluptas consequuntur doloremque ipsa culpa explicabo
-                            sapiente dolorum aliquid rerum voluptate nobis!Lorem ipsum dolor sit amet consectetur
-                            adipisicing elit. Id laboriosam, illo, voluptatum qui
-                            repellat ullam molestiae non, fuga voluptas consequuntur doloremque ipsa culpa explicabo
-                            sapiente dolorum aliquid rerum voluptate nobis!Lorem ipsum dolor sit amet consectetur
-                            adipisicing elit. Id laboriosam, illo, voluptatum qui repellat ullam molestiae non, fuga
-                            voluptas consequuntur doloremque ipsa culpa explicabo sapiente dolorum aliquid rerum voluptate
-                            nobis!Lorem ipsum dolor sit amet consectetur adipisicing elit. Id laboriosam, illo, voluptatum
-                            qui repellat ullam molestiae non, fuga voluptas consequuntur doloremque ipsa culpa explicabo
-                            sapiente dolorum aliquid rerum voluptate nobis!Lorem ipsum dolor sit amet consectetur
-                            adipisicing elit. Id laboriosam, illo, voluptatum qui repellat ullam molestiae non, fuga
-                            voluptas consequuntur doloremque ipsa culpa explicabo sapiente dolorum aliquid rerum voluptate
-                            nobis!Lorem ipsum dolor sit amet consectetur adipisicing elit. Id laboriosam, illo, voluptatum
+                            voluptas consequuntur doloremque ipsa culpa explicabo sapiente dolorum aliquid rerum
+                            voluptate
+                            nobis!Lorem ipsum dolor sit amet consectetur adipisicing elit. Id laboriosam, illo,
+                            voluptatum
                             qui repellat ullam molestiae non, fuga voluptas consequuntur doloremque ipsa culpa explicabo
                             sapiente dolorum aliquid rerum voluptate nobis!Lorem ipsum dolor sit amet consectetur
                             adipisicing elit. Id laboriosam, illo, voluptatum qui
                             repellat ullam molestiae non, fuga voluptas consequuntur doloremque ipsa culpa explicabo
                             sapiente dolorum aliquid rerum voluptate nobis!Lorem ipsum dolor sit amet consectetur
                             adipisicing elit. Id laboriosam, illo, voluptatum qui repellat ullam molestiae non, fuga
-                            voluptas consequuntur doloremque ipsa culpa explicabo sapiente dolorum aliquid rerum voluptate
-                            nobis!Lorem ipsum dolor sit amet consectetur adipisicing elit. Id laboriosam, illo, voluptatum
+                            voluptas consequuntur doloremque ipsa culpa explicabo sapiente dolorum aliquid rerum
+                            voluptate
+                            nobis!Lorem ipsum dolor sit amet consectetur adipisicing elit. Id laboriosam, illo,
+                            voluptatum
                             qui repellat ullam molestiae non, fuga voluptas consequuntur doloremque ipsa culpa explicabo
                             sapiente dolorum aliquid rerum voluptate nobis!Lorem ipsum dolor sit amet consectetur
                             adipisicing elit. Id laboriosam, illo, voluptatum qui repellat ullam molestiae non, fuga
-                            voluptas consequuntur doloremque ipsa culpa explicabo sapiente dolorum aliquid rerum voluptate
-                            nobis!Lorem ipsum dolor sit amet consectetur adipisicing elit. Id laboriosam, illo, voluptatum
+                            voluptas consequuntur doloremque ipsa culpa explicabo sapiente dolorum aliquid rerum
+                            voluptate
+                            nobis!Lorem ipsum dolor sit amet consectetur adipisicing elit. Id laboriosam, illo,
+                            voluptatum
                             qui repellat ullam molestiae non, fuga voluptas consequuntur doloremque ipsa culpa explicabo
                             sapiente dolorum aliquid rerum voluptate nobis!Lorem ipsum dolor sit amet consectetur
                             adipisicing elit. Id laboriosam, illo, voluptatum qui
                             repellat ullam molestiae non, fuga voluptas consequuntur doloremque ipsa culpa explicabo
                             sapiente dolorum aliquid rerum voluptate nobis!Lorem ipsum dolor sit amet consectetur
                             adipisicing elit. Id laboriosam, illo, voluptatum qui repellat ullam molestiae non, fuga
-                            voluptas consequuntur doloremque ipsa culpa explicabo sapiente dolorum aliquid rerum voluptate
-                            nobis!Lorem ipsum dolor sit amet consectetur adipisicing elit. Id laboriosam, illo, voluptatum
+                            voluptas consequuntur doloremque ipsa culpa explicabo sapiente dolorum aliquid rerum
+                            voluptate
+                            nobis!Lorem ipsum dolor sit amet consectetur adipisicing elit. Id laboriosam, illo,
+                            voluptatum
                             qui repellat ullam molestiae non, fuga voluptas consequuntur doloremque ipsa culpa explicabo
                             sapiente dolorum aliquid rerum voluptate nobis!Lorem ipsum dolor sit amet consectetur
                             adipisicing elit. Id laboriosam, illo, voluptatum qui repellat ullam molestiae non, fuga
-                            voluptas consequuntur doloremque ipsa culpa explicabo sapiente dolorum aliquid rerum voluptate
-                            nobis!Lorem ipsum dolor sit amet consectetur adipisicing elit. Id laboriosam, illo, voluptatum
+                            voluptas consequuntur doloremque ipsa culpa explicabo sapiente dolorum aliquid rerum
+                            voluptate
+                            nobis!Lorem ipsum dolor sit amet consectetur adipisicing elit. Id laboriosam, illo,
+                            voluptatum
+                            qui repellat ullam molestiae non, fuga voluptas consequuntur doloremque ipsa culpa explicabo
+                            sapiente dolorum aliquid rerum voluptate nobis!Lorem ipsum dolor sit amet consectetur
+                            adipisicing elit. Id laboriosam, illo, voluptatum qui
+                            repellat ullam molestiae non, fuga voluptas consequuntur doloremque ipsa culpa explicabo
+                            sapiente dolorum aliquid rerum voluptate nobis!Lorem ipsum dolor sit amet consectetur
+                            adipisicing elit. Id laboriosam, illo, voluptatum qui repellat ullam molestiae non, fuga
+                            voluptas consequuntur doloremque ipsa culpa explicabo sapiente dolorum aliquid rerum
+                            voluptate
+                            nobis!Lorem ipsum dolor sit amet consectetur adipisicing elit. Id laboriosam, illo,
+                            voluptatum
+                            qui repellat ullam molestiae non, fuga voluptas consequuntur doloremque ipsa culpa explicabo
+                            sapiente dolorum aliquid rerum voluptate nobis!Lorem ipsum dolor sit amet consectetur
+                            adipisicing elit. Id laboriosam, illo, voluptatum qui repellat ullam molestiae non, fuga
+                            voluptas consequuntur doloremque ipsa culpa explicabo sapiente dolorum aliquid rerum
+                            voluptate
+                            nobis!Lorem ipsum dolor sit amet consectetur adipisicing elit. Id laboriosam, illo,
+                            voluptatum
                             qui repellat ullam molestiae non, fuga voluptas consequuntur doloremque ipsa culpa explicabo
                             sapiente dolorum aliquid rerum voluptate nobis!</p>
                     </div>
@@ -224,52 +255,68 @@
                             repellat ullam molestiae non, fuga voluptas consequuntur doloremque ipsa culpa explicabo
                             sapiente dolorum aliquid rerum voluptate nobis!Lorem ipsum dolor sit amet consectetur
                             adipisicing elit. Id laboriosam, illo, voluptatum qui repellat ullam molestiae non, fuga
-                            voluptas consequuntur doloremque ipsa culpa explicabo sapiente dolorum aliquid rerum voluptate
-                            nobis!Lorem ipsum dolor sit amet consectetur adipisicing elit. Id laboriosam, illo, voluptatum
+                            voluptas consequuntur doloremque ipsa culpa explicabo sapiente dolorum aliquid rerum
+                            voluptate
+                            nobis!Lorem ipsum dolor sit amet consectetur adipisicing elit. Id laboriosam, illo,
+                            voluptatum
                             qui repellat ullam molestiae non, fuga voluptas consequuntur doloremque ipsa culpa explicabo
                             sapiente dolorum aliquid rerum voluptate nobis!Lorem ipsum dolor sit amet consectetur
                             adipisicing elit. Id laboriosam, illo, voluptatum qui repellat ullam molestiae non, fuga
-                            voluptas consequuntur doloremque ipsa culpa explicabo sapiente dolorum aliquid rerum voluptate
-                            nobis!Lorem ipsum dolor sit amet consectetur adipisicing elit. Id laboriosam, illo, voluptatum
-                            qui repellat ullam molestiae non, fuga voluptas consequuntur doloremque ipsa culpa explicabo
-                            sapiente dolorum aliquid rerum voluptate nobis!Lorem ipsum dolor sit amet consectetur
-                            adipisicing elit. Id laboriosam, illo, voluptatum qui
-                            repellat ullam molestiae non, fuga voluptas consequuntur doloremque ipsa culpa explicabo
-                            sapiente dolorum aliquid rerum voluptate nobis!Lorem ipsum dolor sit amet consectetur
-                            adipisicing elit. Id laboriosam, illo, voluptatum qui repellat ullam molestiae non, fuga
-                            voluptas consequuntur doloremque ipsa culpa explicabo sapiente dolorum aliquid rerum voluptate
-                            nobis!Lorem ipsum dolor sit amet consectetur adipisicing elit. Id laboriosam, illo, voluptatum
-                            qui repellat ullam molestiae non, fuga voluptas consequuntur doloremque ipsa culpa explicabo
-                            sapiente dolorum aliquid rerum voluptate nobis!Lorem ipsum dolor sit amet consectetur
-                            adipisicing elit. Id laboriosam, illo, voluptatum qui repellat ullam molestiae non, fuga
-                            voluptas consequuntur doloremque ipsa culpa explicabo sapiente dolorum aliquid rerum voluptate
-                            nobis!Lorem ipsum dolor sit amet consectetur adipisicing elit. Id laboriosam, illo, voluptatum
+                            voluptas consequuntur doloremque ipsa culpa explicabo sapiente dolorum aliquid rerum
+                            voluptate
+                            nobis!Lorem ipsum dolor sit amet consectetur adipisicing elit. Id laboriosam, illo,
+                            voluptatum
                             qui repellat ullam molestiae non, fuga voluptas consequuntur doloremque ipsa culpa explicabo
                             sapiente dolorum aliquid rerum voluptate nobis!Lorem ipsum dolor sit amet consectetur
                             adipisicing elit. Id laboriosam, illo, voluptatum qui
                             repellat ullam molestiae non, fuga voluptas consequuntur doloremque ipsa culpa explicabo
                             sapiente dolorum aliquid rerum voluptate nobis!Lorem ipsum dolor sit amet consectetur
                             adipisicing elit. Id laboriosam, illo, voluptatum qui repellat ullam molestiae non, fuga
-                            voluptas consequuntur doloremque ipsa culpa explicabo sapiente dolorum aliquid rerum voluptate
-                            nobis!Lorem ipsum dolor sit amet consectetur adipisicing elit. Id laboriosam, illo, voluptatum
+                            voluptas consequuntur doloremque ipsa culpa explicabo sapiente dolorum aliquid rerum
+                            voluptate
+                            nobis!Lorem ipsum dolor sit amet consectetur adipisicing elit. Id laboriosam, illo,
+                            voluptatum
                             qui repellat ullam molestiae non, fuga voluptas consequuntur doloremque ipsa culpa explicabo
                             sapiente dolorum aliquid rerum voluptate nobis!Lorem ipsum dolor sit amet consectetur
                             adipisicing elit. Id laboriosam, illo, voluptatum qui repellat ullam molestiae non, fuga
-                            voluptas consequuntur doloremque ipsa culpa explicabo sapiente dolorum aliquid rerum voluptate
-                            nobis!Lorem ipsum dolor sit amet consectetur adipisicing elit. Id laboriosam, illo, voluptatum
+                            voluptas consequuntur doloremque ipsa culpa explicabo sapiente dolorum aliquid rerum
+                            voluptate
+                            nobis!Lorem ipsum dolor sit amet consectetur adipisicing elit. Id laboriosam, illo,
+                            voluptatum
                             qui repellat ullam molestiae non, fuga voluptas consequuntur doloremque ipsa culpa explicabo
                             sapiente dolorum aliquid rerum voluptate nobis!Lorem ipsum dolor sit amet consectetur
                             adipisicing elit. Id laboriosam, illo, voluptatum qui
                             repellat ullam molestiae non, fuga voluptas consequuntur doloremque ipsa culpa explicabo
                             sapiente dolorum aliquid rerum voluptate nobis!Lorem ipsum dolor sit amet consectetur
                             adipisicing elit. Id laboriosam, illo, voluptatum qui repellat ullam molestiae non, fuga
-                            voluptas consequuntur doloremque ipsa culpa explicabo sapiente dolorum aliquid rerum voluptate
-                            nobis!Lorem ipsum dolor sit amet consectetur adipisicing elit. Id laboriosam, illo, voluptatum
+                            voluptas consequuntur doloremque ipsa culpa explicabo sapiente dolorum aliquid rerum
+                            voluptate
+                            nobis!Lorem ipsum dolor sit amet consectetur adipisicing elit. Id laboriosam, illo,
+                            voluptatum
                             qui repellat ullam molestiae non, fuga voluptas consequuntur doloremque ipsa culpa explicabo
                             sapiente dolorum aliquid rerum voluptate nobis!Lorem ipsum dolor sit amet consectetur
                             adipisicing elit. Id laboriosam, illo, voluptatum qui repellat ullam molestiae non, fuga
-                            voluptas consequuntur doloremque ipsa culpa explicabo sapiente dolorum aliquid rerum voluptate
-                            nobis!Lorem ipsum dolor sit amet consectetur adipisicing elit. Id laboriosam, illo, voluptatum
+                            voluptas consequuntur doloremque ipsa culpa explicabo sapiente dolorum aliquid rerum
+                            voluptate
+                            nobis!Lorem ipsum dolor sit amet consectetur adipisicing elit. Id laboriosam, illo,
+                            voluptatum
+                            qui repellat ullam molestiae non, fuga voluptas consequuntur doloremque ipsa culpa explicabo
+                            sapiente dolorum aliquid rerum voluptate nobis!Lorem ipsum dolor sit amet consectetur
+                            adipisicing elit. Id laboriosam, illo, voluptatum qui
+                            repellat ullam molestiae non, fuga voluptas consequuntur doloremque ipsa culpa explicabo
+                            sapiente dolorum aliquid rerum voluptate nobis!Lorem ipsum dolor sit amet consectetur
+                            adipisicing elit. Id laboriosam, illo, voluptatum qui repellat ullam molestiae non, fuga
+                            voluptas consequuntur doloremque ipsa culpa explicabo sapiente dolorum aliquid rerum
+                            voluptate
+                            nobis!Lorem ipsum dolor sit amet consectetur adipisicing elit. Id laboriosam, illo,
+                            voluptatum
+                            qui repellat ullam molestiae non, fuga voluptas consequuntur doloremque ipsa culpa explicabo
+                            sapiente dolorum aliquid rerum voluptate nobis!Lorem ipsum dolor sit amet consectetur
+                            adipisicing elit. Id laboriosam, illo, voluptatum qui repellat ullam molestiae non, fuga
+                            voluptas consequuntur doloremque ipsa culpa explicabo sapiente dolorum aliquid rerum
+                            voluptate
+                            nobis!Lorem ipsum dolor sit amet consectetur adipisicing elit. Id laboriosam, illo,
+                            voluptatum
                             qui repellat ullam molestiae non, fuga voluptas consequuntur doloremque ipsa culpa explicabo
                             sapiente dolorum aliquid rerum voluptate nobis!</p>
                     </div>
@@ -279,52 +326,68 @@
                             repellat ullam molestiae non, fuga voluptas consequuntur doloremque ipsa culpa explicabo
                             sapiente dolorum aliquid rerum voluptate nobis!Lorem ipsum dolor sit amet consectetur
                             adipisicing elit. Id laboriosam, illo, voluptatum qui repellat ullam molestiae non, fuga
-                            voluptas consequuntur doloremque ipsa culpa explicabo sapiente dolorum aliquid rerum voluptate
-                            nobis!Lorem ipsum dolor sit amet consectetur adipisicing elit. Id laboriosam, illo, voluptatum
+                            voluptas consequuntur doloremque ipsa culpa explicabo sapiente dolorum aliquid rerum
+                            voluptate
+                            nobis!Lorem ipsum dolor sit amet consectetur adipisicing elit. Id laboriosam, illo,
+                            voluptatum
                             qui repellat ullam molestiae non, fuga voluptas consequuntur doloremque ipsa culpa explicabo
                             sapiente dolorum aliquid rerum voluptate nobis!Lorem ipsum dolor sit amet consectetur
                             adipisicing elit. Id laboriosam, illo, voluptatum qui repellat ullam molestiae non, fuga
-                            voluptas consequuntur doloremque ipsa culpa explicabo sapiente dolorum aliquid rerum voluptate
-                            nobis!Lorem ipsum dolor sit amet consectetur adipisicing elit. Id laboriosam, illo, voluptatum
-                            qui repellat ullam molestiae non, fuga voluptas consequuntur doloremque ipsa culpa explicabo
-                            sapiente dolorum aliquid rerum voluptate nobis!Lorem ipsum dolor sit amet consectetur
-                            adipisicing elit. Id laboriosam, illo, voluptatum qui
-                            repellat ullam molestiae non, fuga voluptas consequuntur doloremque ipsa culpa explicabo
-                            sapiente dolorum aliquid rerum voluptate nobis!Lorem ipsum dolor sit amet consectetur
-                            adipisicing elit. Id laboriosam, illo, voluptatum qui repellat ullam molestiae non, fuga
-                            voluptas consequuntur doloremque ipsa culpa explicabo sapiente dolorum aliquid rerum voluptate
-                            nobis!Lorem ipsum dolor sit amet consectetur adipisicing elit. Id laboriosam, illo, voluptatum
-                            qui repellat ullam molestiae non, fuga voluptas consequuntur doloremque ipsa culpa explicabo
-                            sapiente dolorum aliquid rerum voluptate nobis!Lorem ipsum dolor sit amet consectetur
-                            adipisicing elit. Id laboriosam, illo, voluptatum qui repellat ullam molestiae non, fuga
-                            voluptas consequuntur doloremque ipsa culpa explicabo sapiente dolorum aliquid rerum voluptate
-                            nobis!Lorem ipsum dolor sit amet consectetur adipisicing elit. Id laboriosam, illo, voluptatum
+                            voluptas consequuntur doloremque ipsa culpa explicabo sapiente dolorum aliquid rerum
+                            voluptate
+                            nobis!Lorem ipsum dolor sit amet consectetur adipisicing elit. Id laboriosam, illo,
+                            voluptatum
                             qui repellat ullam molestiae non, fuga voluptas consequuntur doloremque ipsa culpa explicabo
                             sapiente dolorum aliquid rerum voluptate nobis!Lorem ipsum dolor sit amet consectetur
                             adipisicing elit. Id laboriosam, illo, voluptatum qui
                             repellat ullam molestiae non, fuga voluptas consequuntur doloremque ipsa culpa explicabo
                             sapiente dolorum aliquid rerum voluptate nobis!Lorem ipsum dolor sit amet consectetur
                             adipisicing elit. Id laboriosam, illo, voluptatum qui repellat ullam molestiae non, fuga
-                            voluptas consequuntur doloremque ipsa culpa explicabo sapiente dolorum aliquid rerum voluptate
-                            nobis!Lorem ipsum dolor sit amet consectetur adipisicing elit. Id laboriosam, illo, voluptatum
+                            voluptas consequuntur doloremque ipsa culpa explicabo sapiente dolorum aliquid rerum
+                            voluptate
+                            nobis!Lorem ipsum dolor sit amet consectetur adipisicing elit. Id laboriosam, illo,
+                            voluptatum
                             qui repellat ullam molestiae non, fuga voluptas consequuntur doloremque ipsa culpa explicabo
                             sapiente dolorum aliquid rerum voluptate nobis!Lorem ipsum dolor sit amet consectetur
                             adipisicing elit. Id laboriosam, illo, voluptatum qui repellat ullam molestiae non, fuga
-                            voluptas consequuntur doloremque ipsa culpa explicabo sapiente dolorum aliquid rerum voluptate
-                            nobis!Lorem ipsum dolor sit amet consectetur adipisicing elit. Id laboriosam, illo, voluptatum
+                            voluptas consequuntur doloremque ipsa culpa explicabo sapiente dolorum aliquid rerum
+                            voluptate
+                            nobis!Lorem ipsum dolor sit amet consectetur adipisicing elit. Id laboriosam, illo,
+                            voluptatum
                             qui repellat ullam molestiae non, fuga voluptas consequuntur doloremque ipsa culpa explicabo
                             sapiente dolorum aliquid rerum voluptate nobis!Lorem ipsum dolor sit amet consectetur
                             adipisicing elit. Id laboriosam, illo, voluptatum qui
                             repellat ullam molestiae non, fuga voluptas consequuntur doloremque ipsa culpa explicabo
                             sapiente dolorum aliquid rerum voluptate nobis!Lorem ipsum dolor sit amet consectetur
                             adipisicing elit. Id laboriosam, illo, voluptatum qui repellat ullam molestiae non, fuga
-                            voluptas consequuntur doloremque ipsa culpa explicabo sapiente dolorum aliquid rerum voluptate
-                            nobis!Lorem ipsum dolor sit amet consectetur adipisicing elit. Id laboriosam, illo, voluptatum
+                            voluptas consequuntur doloremque ipsa culpa explicabo sapiente dolorum aliquid rerum
+                            voluptate
+                            nobis!Lorem ipsum dolor sit amet consectetur adipisicing elit. Id laboriosam, illo,
+                            voluptatum
                             qui repellat ullam molestiae non, fuga voluptas consequuntur doloremque ipsa culpa explicabo
                             sapiente dolorum aliquid rerum voluptate nobis!Lorem ipsum dolor sit amet consectetur
                             adipisicing elit. Id laboriosam, illo, voluptatum qui repellat ullam molestiae non, fuga
-                            voluptas consequuntur doloremque ipsa culpa explicabo sapiente dolorum aliquid rerum voluptate
-                            nobis!Lorem ipsum dolor sit amet consectetur adipisicing elit. Id laboriosam, illo, voluptatum
+                            voluptas consequuntur doloremque ipsa culpa explicabo sapiente dolorum aliquid rerum
+                            voluptate
+                            nobis!Lorem ipsum dolor sit amet consectetur adipisicing elit. Id laboriosam, illo,
+                            voluptatum
+                            qui repellat ullam molestiae non, fuga voluptas consequuntur doloremque ipsa culpa explicabo
+                            sapiente dolorum aliquid rerum voluptate nobis!Lorem ipsum dolor sit amet consectetur
+                            adipisicing elit. Id laboriosam, illo, voluptatum qui
+                            repellat ullam molestiae non, fuga voluptas consequuntur doloremque ipsa culpa explicabo
+                            sapiente dolorum aliquid rerum voluptate nobis!Lorem ipsum dolor sit amet consectetur
+                            adipisicing elit. Id laboriosam, illo, voluptatum qui repellat ullam molestiae non, fuga
+                            voluptas consequuntur doloremque ipsa culpa explicabo sapiente dolorum aliquid rerum
+                            voluptate
+                            nobis!Lorem ipsum dolor sit amet consectetur adipisicing elit. Id laboriosam, illo,
+                            voluptatum
+                            qui repellat ullam molestiae non, fuga voluptas consequuntur doloremque ipsa culpa explicabo
+                            sapiente dolorum aliquid rerum voluptate nobis!Lorem ipsum dolor sit amet consectetur
+                            adipisicing elit. Id laboriosam, illo, voluptatum qui repellat ullam molestiae non, fuga
+                            voluptas consequuntur doloremque ipsa culpa explicabo sapiente dolorum aliquid rerum
+                            voluptate
+                            nobis!Lorem ipsum dolor sit amet consectetur adipisicing elit. Id laboriosam, illo,
+                            voluptatum
                             qui repellat ullam molestiae non, fuga voluptas consequuntur doloremque ipsa culpa explicabo
                             sapiente dolorum aliquid rerum voluptate nobis!</p>
                     </div>
@@ -354,48 +417,48 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
     <script>
-  document.querySelectorAll('.nav-link').forEach(link => {
-    link.addEventListener('click', function(e) {
-      const targetId = this.getAttribute('href').split('#')[1];
-      const targetElement = document.getElementById(targetId);
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', function (e) {
+                const targetId = this.getAttribute('href').split('#')[1];
+                const targetElement = document.getElementById(targetId);
 
-      if (targetElement) {
-        e.preventDefault(); // evita el comportamiento por defecto
-        const offset = 100; // altura que quieres compensar
-        const top = targetElement.getBoundingClientRect().top + window.scrollY - offset;
+                if (targetElement) {
+                    e.preventDefault(); // evita el comportamiento por defecto
+                    const offset = 100; // altura que quieres compensar
+                    const top = targetElement.getBoundingClientRect().top + window.scrollY - offset;
 
-        window.scrollTo({
-          top: top,
-          behavior: 'smooth'
+                    window.scrollTo({
+                        top: top,
+                        behavior: 'smooth'
+                    });
+                }
+            });
         });
-      }
-    });
-  });
     </script>
 
     <script>
-  document.addEventListener("DOMContentLoaded", function () {
-    const secciones = ['introduccion', 'inicio-rapido', 'componentes'];
+        document.addEventListener("DOMContentLoaded", function () {
+            const secciones = ['introduccion', 'inicio-rapido', 'componentes'];
 
-    window.addEventListener('scroll', () => {
-      let scrollPos = window.scrollY + 130;
+            window.addEventListener('scroll', () => {
+                let scrollPos = window.scrollY + 130;
 
-      secciones.forEach(id => {
-        const seccion = document.getElementById(id);
-        const link = document.querySelector(`a[href*="#${id}"]`);
+                secciones.forEach(id => {
+                    const seccion = document.getElementById(id);
+                    const link = document.querySelector(`a[href*="#${id}"]`);
 
-        if (seccion && link) {
-          if (seccion.offsetTop <= scrollPos && seccion.offsetTop + seccion.offsetHeight > scrollPos) {
-            link.classList.add('activo');
-          } else {
-            link.classList.remove('activo');
-          }
-        }
-      });
-    });
-  });
+                    if (seccion && link) {
+                        if (seccion.offsetTop <= scrollPos && seccion.offsetTop + seccion.offsetHeight > scrollPos) {
+                            link.classList.add('activo');
+                        } else {
+                            link.classList.remove('activo');
+                        }
+                    }
+                });
+            });
+        });
     </script>
-
+<script src="../theme.js"></script>
 
 
 </body>
