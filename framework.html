@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>gineeri – Framework .NET</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- Navegación -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="index.html">gineeri</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="menu">
+        <ul class="navbar-nav ms-auto">
+
+          <!-- Aprende | cosas simples -->
+          <a class="dropdown-link-unico nav-link"
+            href="framework.html">Aprende</a><!-- explicado con analogías simples -->
+
+          <!-- Documentación -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="documentaciónDropdown" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              Documentación
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="documentaciónDropdown">
+              <li><a href="guia/introduccion.html" class="dropdown-link">Guía del framework</a></li>
+              <!-- Filosofía de Gineeri, arquitectura por capas, cómo se integra con .NET -->
+              <!--<li><a href="tutorial.html" class="dropdown-link">Tutorial</a></li> Crea tu primera app con Gineeri: desde requisitos hasta interfaz funcional -->
+              <li><a href="guia/ejemplos.html" class="dropdown-link">Ejemplos</a></li>
+              <!-- Proyectos de taller, brokers, salones, con capturas y fragmentos de código -->
+              <li><a href="guia/inicio-rapido.html" class="dropdown-link">Inicio rápido</a></li>
+              <!-- Instalación, configuración en Visual Studio, estructura mínima -->
+              <li><a href="guia/glosario.html" class="dropdown-link">Glosario técnico</a></li>
+              <!-- Términos como “UI unificada”, “persistencia desacoplada”, “componente GUI” -->
+              <li><a href="guia/errores.html" class="dropdown-link">Errores comunes</a></li>
+              <!-- Problemas frecuentes y cómo resolverlos (circularidad, render, bindings) -->
+              <!-- <li><a href="migracion.html" class="dropdown-link">Migración</a></li> Guía para transformar apps tradicionales usando Gineeri -->
+            </ul>
+          </li>
+
+
+          <a class="dropdown-link-unico nav-link"
+            href="soluciones.html">Soluciones</a><!-- explicado con analogías simples -->
+
+
+          <a class="dropdown-link-unico nav-link"
+            href="industrias.html">Industrias</a><!-- explicado con analogías simples -->
+
+          <!-- Acerca de -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="acercaDeDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Acerca de
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="acercaDeDropdown">
+              <li><a href="acercade/preguntasfrecuentes.html" class="dropdown-link">Preguntas frecuentes</a></li>
+              <li><a href="#" class="dropdown-link">Sección</a></li>
+              <li><a href="#" class="dropdown-link">Sección</a></li>
+              <li><a href="#" class="dropdown-link">Sección</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <!-- Header general -->
+  <section>
+    <header class="bg-f0 py-5 text-center" id="framework">
+      <h1 class="display-5 fw-bold"><span class="display-1 extra-bold">GINEERI</span></h1>
+      <p class="lead text-muted">Su arquitectura modular desacopla la presentación de la lógica, permitiendo que el
+        mismo componente se renderice en múltiples plataformas sin duplicar código..</p>
+    </header>
+  </section>
+
+
+  <!-- Sección 2: Proceso -->
+  <section id="proceso" class="py-5 text-center">
+    <div class="container">
+      <h2 class="fw-bold mb-4">Proceso de construcción</h2>
+      <div class="row justify-content-center">
+        <!-- Recuadro 1 -->
+        <div class="col-6 col-md-3 mb-4">
+          <div class="cuadro-aprende" onclick="mostrarPaso('diseño')">
+            <h3 class="feature-title">High-speed</h3>
+          </div>
+        </div>
+        <div class="col-6 col-md-3 mb-4">
+          <div class="cuadro-aprende" onclick="mostrarPaso('diseño')">
+            <h3 class="feature-title">High-speed</h3>
+          </div>
+        </div>
+        <div class="col-6 col-md-3 mb-4">
+          <div class="cuadro-aprende" onclick="mostrarPaso('diseño')">
+            <h3 class="feature-title">High-speed</h3>
+          </div>
+        </div>
+        <div class="col-6 col-md-3 mb-4">
+          <div class="cuadro-aprende" onclick="mostrarPaso('diseño')">
+            <h3 class="feature-title">High-speed</h3>
+          </div>
+        </div>
+        <div class="col-6 col-md-3 mb-4">
+          <div class="cuadro-aprende" onclick="mostrarPaso('diseño')">
+            <h3 class="feature-title">High-speed</h3>
+          </div>
+        </div>
+        <div class="col-6 col-md-3 mb-4">
+          <div class="cuadro-aprende" onclick="mostrarPaso('diseño')">
+            <h3 class="feature-title">High-speed</h3>
+          </div>
+        </div>
+        <div class="col-6 col-md-3 mb-4">
+          <div class="cuadro-aprende" onclick="mostrarPaso('diseño')">
+            <h3 class="feature-title">High-speed</h3>
+          </div>
+        </div>
+        <div class="col-6 col-md-3 mb-4">
+          <div class="cuadro-aprende" onclick="mostrarPaso('diseño')">
+            <h3 class="feature-title">High-speed</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+<!-- Ventana emergente -->
+<div id="overlay" class="overlay" onclick="cerrarModal(event)">
+  <div id="modalPaso" class="modal-cuadro" onclick="evitarCierre(event)">
+    <h5 id="modalTitulo" class="fw-bold mb-3"></h5>
+    <p id="modalContenido"></p>
+  </div>
+</div>
+
+
+  <!-- Sección 3: Curso -->
+  <section id="curso" class="py-5 text-center">
+    <div class="container">
+      <h2 class="fw-bold mb-4">Curso</h2>
+      <p class="lead mx-auto" style="max-width: 700px;">Mira cómo se usa Gineeri en un proyecto real y aprende a crear
+        tu primera app.</p>
+
+      <div class="video-layout mt-5">
+        <!-- Columna izquierda -->
+        <div class="side-column">
+          <div class="mini-box" onclick="mostrarContenido(1)">1</div>
+          <div class="mini-box" onclick="mostrarContenido(2)">2</div>
+          <div class="mini-box" onclick="mostrarContenido(3)">3</div>
+        </div>
+
+        <!-- Área central -->
+        <div class="main-box" id="contenidoCentral">
+          <!-- Contenido por defecto (video 1) -->
+          <div class="ratio ratio-16x9 mb-3">
+            <iframe src="https://www.youtube.com/embed/mxaCQagUjuw" allowfullscreen></iframe>
+          </div>
+          <p class="mb-3">Tutorial práctico usando Ionic para crear tu primera app móvil.</p>
+        </div>
+
+        <!-- Columna derecha -->
+        <div class="side-column">
+          <div class="mini-box" onclick="mostrarContenido(4)">4</div>
+          <div class="mini-box" onclick="mostrarContenido(5)">5</div>
+          <div class="mini-box" onclick="mostrarContenido(6)">6</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Sección 4: Diagrama -->
+  <section id="diagrama" class="py-5 bg-f0">
+    <div class="container">
+      <h2 class="mb-4 text-center">Modelo y Diagrama</h2>
+
+      <!-- Navegación de pestañas -->
+      <ul class="nav nav-tabs justify-content-center" id="proyectoTabs" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link active" id="final-tab" data-bs-toggle="tab" data-bs-target="#final" type="button"
+            role="tab">Sistema Final</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="diseno-tab" data-bs-toggle="tab" data-bs-target="#diseno" type="button"
+            role="tab">Diseño Técnico</button>
+        </li>
+      </ul>
+
+      <!-- Contenido de pestañas -->
+      <div class="tab-content pt-4" id="proyectoTabsContent">
+
+        <!-- Sistema Final -->
+        <div class="tab-pane fade show active" id="final" role="tabpanel">
+          <div class="diagrama-box">
+            <p>Este es el sistema de gestión para un taller mecánico, desarrollado con Gineeri. Funciona tanto en Web
+              como en WinForms, con una interfaz rápida, intuitiva y conectada a una base de datos local.</p>
+            <a href="#" class="btn btn-primary mt-3">Probar demo</a>
+          </div>
+        </div>
+
+        <!-- Diseño Técnico -->
+        <div class="tab-pane fade" id="diseno" role="tabpanel">
+          <div class="diagrama-box">
+            <p>La arquitectura fue diseñada en PlantUML, dividiendo el sistema en capas: UI, lógica de negocio,
+              persistencia y entidades. Gineeri permite que estas capas se conecten sin duplicar código.</p>
+            <a href="#" class="btn btn-outline-secondary mt-3">Ver diagrama completo</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-f0 text-center py-4">
+    <p class="mb-0 text-muted">© 2025 Gineeri · Todos los derechos reservados</p>
+  </footer>
+
+
+  <!-- scripts -->
+  <script>
+      // JavaScript para manejar la animación del modal
+  function mostrarPaso(paso) {
+    const overlay = document.getElementById('overlay');
+    const modal = document.getElementById('modalPaso');
+    
+    // Configurar contenido según el paso
+    document.getElementById('modalTitulo').textContent = 'Título del Paso';
+    document.getElementById('modalContenido').textContent = 'Contenido descriptivo del paso seleccionado...';
+    
+    // Mostrar con animación
+    overlay.style.display = 'block';
+    modal.style.display = 'block';
+    
+    // Trigger para la animación
+    setTimeout(() => {
+      overlay.classList.add('active');
+      modal.classList.add('active');
+    }, 10);
+  }
+
+  // EVITAR que el modal se cierre al hacer clic dentro de él
+  function evitarCierre(event) {
+    event.stopPropagation(); // Detiene la propagación del evento
+  }
+
+  // CERRAR modal solo si se hace clic en el overlay (fondo)
+  function cerrarModal(event) {
+    // Solo cerrar si se hizo clic directamente en el overlay (no en sus hijos)
+    if (event.target === document.getElementById('overlay')) {
+      const overlay = document.getElementById('overlay');
+      const modal = document.getElementById('modalPaso');
+      
+      // Ocultar con animación
+      overlay.classList.remove('active');
+      modal.classList.remove('active');
+      
+      // Ocultar completamente después de la animación
+      setTimeout(() => {
+        overlay.style.display = 'none';
+        modal.style.display = 'none';
+      }, 300);
+    }
+  }
+
+  // Cerrar modal con la tecla ESC
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') {
+      const overlay = document.getElementById('overlay');
+      const modal = document.getElementById('modalPaso');
+      
+      if (overlay.style.display === 'block') {
+        overlay.classList.remove('active');
+        modal.classList.remove('active');
+        
+        setTimeout(() => {
+          overlay.style.display = 'none';
+          modal.style.display = 'none';
+        }, 300);
+      }
+    }
+  });
+  </script>
+
+  <script>
+    function mostrarContenido(id) {
+      const contenido = {
+        1: `
+        <div class="ratio ratio-16x9 mb-3">
+          <iframe src="https://www.youtube.com/embed/mxaCQagUjuw" allowfullscreen></iframe>
+        </div>
+        <p>Tutorial práctico usando Ionic para crear tu primera app móvil.</p>
+      `,
+        2: `
+        <div class="ratio ratio-16x9 mb-3">
+          <iframe src="https://www.youtube.com/embed/Wc5OBu6PaKQ" allowfullscreen></iframe>
+        </div>
+        <p>Aprende a crear apps web y móviles sin programación con Flutterflow.</p>
+      `,
+        3: `
+        <div class="ratio ratio-16x9 mb-3">
+          <iframe src="https://www.youtube.com/embed/VpZKTonVhnY" allowfullscreen></iframe>
+        </div>
+        <p>Explora cómo crear una app con 5 frameworks de JavaScript.</p>
+        
+      `,
+        4: `
+        <div class="ratio ratio-16x9 mb-3">
+          <iframe src="https://www.youtube.com/embed/mxaCQagUjuw" allowfullscreen></iframe>
+        </div>
+        <p>Tutorial práctico usando Ionic para crear tu primera app móvil.</p>
+      `,
+        5: `
+        <div class="ratio ratio-16x9 mb-3">
+        <iframe src="https://www.youtube.com/embed/Wc5OBu6PaKQ" allowfullscreen></iframe>
+        </div>
+        <p>Aprende a crear apps web y móviles sin programación con Flutterflow.</p>
+      `,
+        6: `
+        <div class="ratio ratio-16x9 mb-3">
+          <iframe src="https://www.youtube.com/embed/VpZKTonVhnY" allowfullscreen></iframe>
+        </div>
+        <p>Explora cómo crear una app con 5 frameworks de JavaScript.</p>
+        
+      `
+      };
+
+      document.getElementById("contenidoCentral").innerHTML = contenido[id];
+    }
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
