@@ -2,10 +2,10 @@
   /* Colores modo claro (default) */
   --bg-primary: #f8f9fa;
   --bg-secundary: #ececec;
-  --text-primary: #181818;
+  --text-primary: #2D2D2D;
   --text-secondary: #6c757d;
   --border-color: #e0e0e0;
-  --accent-color: #0d6efd;
+  --accent-color: #66C1FF;
   --card-bg: #f8f9fa;
   --shadow-color: rgba(0, 0, 0, 0.1);
   --hover-bg: #f0f0f0;
@@ -17,11 +17,11 @@
 [data-theme="dark"] {
   /* Colores modo oscuro */
   --bg-primary: #1F1F1F;
-  --bg-secundary: #222222;
-  --text-primary: #ffffff;
+  --bg-secundary: #262626;
+  --text-primary: #E7E7E7;
   --text-secondary: #cccccc;
   --border-color: #373839;
-  --accent-color: #4d8eff;
+  --accent-color: #090a0b;
   --card-bg: #1F1F1F;
   --shadow-color: rgba(0, 0, 0, 0.3);
   --hover-bg: #3d3d3d;
@@ -32,7 +32,7 @@
 
 /* Asegurar que todos los elementos usen variables CSS */
 * {
-  transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+  transition: background-color 0.15s ease, color 0.15s ease, border-color 0.15s ease;
 }
 
 /* Forzar modo oscuro en elementos específicos si es necesario */
@@ -44,6 +44,19 @@
   background-color: var(--bg-primary);
   color: var(--text-primary);
 }
+
+.anton-regular {
+  font-family: "Anton", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.text-giant {
+  font-size: 5vw; 
+  line-height: 1.1;
+  display: block;
+  color: var(--text-primary);
+}
+
 
 /* COLORES Y FONDOS */
 .bg-f0 {
@@ -172,7 +185,7 @@ nav {
 .navbar-brand {
   font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
   font-weight: 700;
-  font-size: 1.8rem;
+  font-size: 1.4rem;
   color: var(--gineeri);
   text-decoration: none;
   transition: all 0.2s ease;
@@ -423,9 +436,9 @@ nav {
 }
 
 .cuadro-aprende:hover {
-  transform: scale(1.04);
-  box-shadow: 0 10px 25px var(--shadow-color);
-  background-color: var(--hover-bg);
+  transform: scale(1.03);
+  box-shadow: 0 8px 20px var(--shadow-color);
+  background-color: var(--bg-secundary);
 }
 
 /* MODAL PERSONALIZADO */
@@ -649,11 +662,13 @@ nav {
   left: -10px;
   top: 50%;
   transform: translateY(-50%);
-  width: 2px;
+  width: 4px;
   height: 1em;
   background-color: var(--accent-color);
-  border-radius: 1px;
+  border-radius: 8px;
 }
+
+
 
 .nav-tabs {
     border-bottom-color: var(--border-color);
@@ -792,18 +807,17 @@ nav {
 }
 
 .proyecto {
-  background-color: var(--bg-primary);
+  background-color: var(--bg-secundary);
   padding: 32px 32px;
   border-radius: 2px;
   font-weight: 500;
-  color: var(--text-primary);
+  color: var(--text-secondary);
   transition: transform 0.2s ease;
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 120px;
   text-align: center;
-  border: 1px solid var(--border-color);
 }
 
 .proyecto:hover {
@@ -866,7 +880,7 @@ nav {
 }
 
 .tabla-codigos thead {
-  background-color: var(--bg-primary);
+  background-color: var(--bg-secundary);
   font-weight: bold;
 }
 
